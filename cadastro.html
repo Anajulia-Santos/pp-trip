@@ -16,7 +16,7 @@
     <!-- LINK CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body id="cadastrobody">
 
   <nav class="navbar navbar-expand-md bg-black fixed-top">
     <div class="container-fluid">
@@ -54,30 +54,31 @@
 <h1>P.P.Trip</h1>
 
 <section id="caixacd">
-    <h1 class="textform">Crie sua conta na P.P. Trip.</h1>
+    <h1 class="textform">Crie sua conta</h1>
     <form>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label" aria-placeholder="Usuário">Usuário</label>
+            <label for="exampleInputEmail1" class="form-label" aria-placeholder="Usuário">Usuário <img id="cadimg" src="assets/user.png" alt="...">
+            </label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label" aria-placeholder="exemple@gmail.com">Email</label>
+            <label for="exampleInputEmail1" class="form-label" aria-placeholder="exemple@gmail.com">Email <img id="cadimg" src="assets/email.png" alt="..."></label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label" aria-placeholder="Sua Senha">Senha</label>
+            <label for="exampleInputPassword1" class="form-label" aria-placeholder="Sua Senha">Senha <img id="cadimg" src="assets/senha.png" alt="..."></label>
             <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label" aria-placeholder="Sua Senha">Confirmação de
-                Senha</label>
+                Senha <img id="cadimg" src="assets/senha.png" alt="..."></label>
             <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <button type="submit" class="btn btn-primary" id="btnsubimit">Concluir</button>
     </form>
   </section>
 
-<footer>
+<footer id="cadastrofoot">
     <p>Todos os direitos reservados a P.P.Trip &copy;.2023</p>
 </footer>
 

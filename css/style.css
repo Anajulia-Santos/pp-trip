@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: 'game';
+    src: url(../fontes/Gameplay.ttf);
+}
+@font-face {
+    font-family: 'caviar';
+    src: url(../fontes/CaviarDreams.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +53,8 @@ a.nav-link:hover {
 }
 
 footer{
+    position: relative;
+    bottom: 0;
     width: 100%;
     height: 80px;
     text-align: center;
@@ -70,8 +80,19 @@ footer{
 
 
 /* Parte Cadastro */
+
+#cadastrobody{
+    background-image: url(../assets/damha.png) ;
+    backdrop-filter: blur(30px);
+    
+    
+}
 section h1.textform{
+    color: rgb(63, 238, 63);
+    text-shadow: #000 2px 4px 5px;
     text-align: center;
+    font-family: 'game';
+    font-size: 45px;
 }
 
 h1{
@@ -79,20 +100,34 @@ h1{
 }
 
 #caixacd{
-    background-color: #ccc;
-    width: 80%;
+   
+    background-image: url(../assets/damha.png);
+    width: 65%;
     min-height: 700px;
     height: auto;
-    margin: 50px auto;
-    border: 1px solid #000;
-    border-radius: 20px;
+    margin: 90px auto;
+    box-shadow: 10px 5px 10px rgb(0, 0, 0);
+   
+    border-radius: 10px;
 }
 
 form{
-    width: 80%;
+    width: 50%;
     min-height: 600px;
     height: auto;
-    margin: 20px auto 0px auto;
+    margin: 50px auto 0px auto;
+}
+
+input{
+    border-radius: 15px !important;
+   font-size: 23px !important;
+   color: black  !important;
+  
+}
+input:active{
+    border: #91f7b6 solid 3px !important;
+    border: none !important;
+    transition: #0ef007 .15s ease-in-out, #8efa00 .15s ease-in-out !important;
 }
 
 div.mb-3{
@@ -101,8 +136,11 @@ div.mb-3{
     width: 70%;
 }
 
-.form-label{
-    font-size: 30px;
+.form-label{ 
+    color: black;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .form-control{
@@ -116,7 +154,38 @@ button#btnsubimit{
     margin: 70px auto;
     border-radius: 30px;
     font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    border: #000;
+    box-shadow: 5px 2px rgb(30, 255, 0);
+    }
+    button#btnsubimit:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px auto;
+        border-radius: 30px;
+        font-size: 30px;
+        color: #ffffff;
+        background-color: #12690f;
+        border: #12690f;
+        box-shadow: 5px 2px rgb(0, 0, 0);
+        }
+        #cadimg{
+            height: 30px;
+            width: 30px;
+        }
+    #cadastrofoot{ 
+    position:sticky;
+    bottom: 0 ;
+    height: 70px ;
+    left:0;
+    
+ 
+
 }
+
+
 /* Final Cadastro */
 
 /* sobre */
@@ -153,3 +222,23 @@ button#btnsubimit{
     
 }
 /* final sobre */
+/* contato*/
+
+#bodycontato{
+    background-image: url(../assets/cidadepp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mapacont{
+    display: flex;
+    justify-content: right;
+    align-items:end;
+    position: relative;
+   
+}
+iframe{
+    border-radius: 100px;
+    height: 800px;
+    margin: 100px 20px 0px 0px;
+    
+}
