@@ -242,3 +242,11 @@ iframe{
     margin: 100px 20px 0px 0px;
     
 }
+div#map-cont{
+    margin-top: 20px !important;
+   
+}
+div#map-cont iframe{
+    width: 100% !important;
+     border-radius: 0;
+}
